@@ -1,0 +1,39 @@
+{
+  "name": "@meom/test-suite",
+  "version": "0.1.0",
+  "description": "The standard launch check for kala-stack WordPress sites",
+  "license": "GPL-2.0-or-later",
+  "author": "MEOM Oy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MEOM/test-suite.git"
+  },
+  "type": "module",
+  "bin": {
+    "test-suite": "bin/test-suite.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "!lib/*.test.js",
+    "specs/",
+    "examples/",
+    "playwright.config.js",
+    "launch-check.js",
+    "check-config.js",
+    "image-audit.js",
+    "build-gallery.js",
+    "README.md",
+    "AGENTS.md"
+  ],
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "test:unit": "node --test lib/*.test.js"
+  },
+  "dependencies": {
+    "@playwright/test": "1.60.0",
+    "yaml": "^2.5.0"
+  }
+}

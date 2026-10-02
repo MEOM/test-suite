@@ -1,0 +1,5 @@
+node_modules/
+report/
+.auth/
+.env.tests
+*.tgz
